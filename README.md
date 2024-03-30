@@ -1,9 +1,9 @@
-# HOTEL API
+# HOTEL API WITH TYESCRIPT
 
 Overview
 
 
-* A simple API for managing hotel operations. It provides services for managing users, rooms and room types. The API has three main components:  Room and Room Type.
+* A simple API written with typescript for managing hotel operations. It provides services for managing users, rooms and room types. The API has three main components: User, Room and Room Type.
 
 # Room Type
 
@@ -79,7 +79,3 @@ The API has two main routes:  Room and Room Type routes.
 * POST "{baseUrl}/api/v1/user/login": Logs in a user.
 
 
-
-
-
-# live link: https://hotel-api-1.onrender.com

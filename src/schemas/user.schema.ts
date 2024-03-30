@@ -1,4 +1,4 @@
-const joi = require('joi')
+import joi from 'joi'
 
 
 const createUserSchema = joi.object({
@@ -13,4 +13,4 @@ const editUserSchema = joi.object({
     role: joi.string().optional().lowercase().trim()
 })
 
-module.exports = {createUserSchema, editUserSchema}
+export  {createUserSchema, editUserSchema};

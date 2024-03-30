@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose"
 mongoose.set('strictQuery', true);
 
-function database() {
-    mongoose.connect(process.env.DB_URI)
+export default function database() {
+    mongoose.connect(process.env.DB_URI!)
         .then(() => {
             console.log("MongoDB is connected");
         })
@@ -10,5 +10,3 @@ function database() {
             console.log("There was an error while connecting to the database");
         });
 }
-
-module.exports = database;

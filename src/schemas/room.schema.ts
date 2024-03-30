@@ -1,4 +1,4 @@
-const joi = require('joi')
+import joi from 'joi'
 
 
 const createRoomSchema = joi.object({
@@ -13,4 +13,4 @@ const editRoomSchema = joi.object({
     price: joi.number().optional()
 })
 
-module.exports = {createRoomSchema, editRoomSchema}
+export  {createRoomSchema, editRoomSchema};

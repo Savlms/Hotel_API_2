@@ -1,8 +1,8 @@
-const joi = require('joi')
+import joi from 'joi'
 
 
 const roomTypeSchema = joi.object({
     name: joi.string().required().trim().lowercase()
 })
 
-module.exports = roomTypeSchema
+export default  roomTypeSchema

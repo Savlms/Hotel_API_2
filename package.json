@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/node": "^20.11.30",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -11,16 +12,24 @@
     "mongoose": "^8.2.2",
     "node-gyp": "^10.0.1",
     "node-pre-gyp": "^0.17.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.3"
   },
-  "name": "hotel_api_1",
+  "name": "hotel_api_2",
   "version": "1.0.0",
-  "main": "src/app.js",
+  "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "savlms",
+  "license": "MIT",
+  "description": "Overview",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6"
+  }
 }

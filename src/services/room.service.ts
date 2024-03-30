@@ -1,13 +1,14 @@
-const Room = require("../models/room.model");
+import IRoom from "../interfaces/room.interface"
+import Room from "../models/room.model"
 
-class RoomServices {
+export default class RoomServices {
     //create room
-    async createRoom (room) {
+    async createRoom (room: IRoom) {
         const newRoom = await Room.create(room)
         return newRoom
     }
     //get room
-    async getRoom (id) {
+    async getRoom (id: string) {
         const room = await Room.findById(id)
         return room
     }
@@ -17,23 +18,18 @@ class RoomServices {
         return allRoom
     }
     //get room with filter
-    async getRoomByFilter (filter) {
+    async getRoomByFilter (filter: {}) {
         const roomFilter = await Room.findOne(filter)
         return roomFilter
     }
     //update room
-    async updateRoom (id, data) {
+    async updateRoom (id: string, data: Partial<IRoom>) {
         const updateRoom = await Room.findByIdAndUpdate(id, data, {new: true})
         return updateRoom
     }
     //delete room
-    async deleteRoom (id) {
+    async deleteRoom (id: string) {
         const deleteRoom = await Room.findByIdAndDelete(id)
         return deleteRoom
     }
 }
-
-
-module.exports = new RoomServices ();
-
-
